@@ -76,9 +76,11 @@ color: #fff;
 position: absolute;
 top:25px;
 left:30px;
+color: #000;
 }
 .graph{
 margin: 0 auto;
+margin-top: 100px;
 height: 40vh;
 width:70%;
 position:relative;

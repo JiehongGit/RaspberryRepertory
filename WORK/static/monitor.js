@@ -14,6 +14,7 @@ $(document).ready(function(){
 			url:$SCRIPT_ROOT + '/tmp_info',
 			success:function(data){
 				updateData(data.tmp, data.hum);
+				getTmp(data.tmp, data.hum);
 		}
 		});
 	};
@@ -29,10 +30,10 @@ $(document).ready(function(){
 	
 	function getTmp(tmp, hum){
 		var tmpGet = $(".tmp-i");
-		var humGet = + $(".hum-i");
+		var humGet = $(".hum-i");
 		tmpGet.text("温度:" + tmp);
-		humGet.text("湿度:" + tmp);
-	}
+		humGet.text("湿度:" + hum);
+	};
 
 	function updateData(tmp, hum){
 		recvList.shift();
