@@ -6,11 +6,11 @@ import requests
 import json
 
 def DHT11():
-  channel = 18
+  channel = 24
   data = []
   j = 0
 
-  GPIO.setmode(GPIO.BOARD)
+  GPIO.setmode(GPIO.BCM)
   time.sleep(1)
   GPIO.setup(channel, GPIO.OUT)
   GPIO.output(channel, GPIO.LOW)
